@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "ÜçDörtBeş Ad Cleaner",
+  "description": "Üç Dört Beş çözüm videolarını reklamsız bir şekilde izleyebilmenizi sağlar",
+  "version": "1.0",
+  "author": "Avare Kodcu <abdurrahmaneker58@gmail.com>",
+  "content_scripts": [
+  {
+    "matches": [
+      "https://www.ucdortbes.com/*",
+      "http://www.ucdortbes.com/*",
+      "https://ucdortbes.com/*",
+      "http://ucdortbes.com/*"
+    ],
+    "js": ["content.js"]
+  }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
